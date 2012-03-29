@@ -123,6 +123,10 @@ namespace GmailNotifierPlus.Forms {
 
 			}
 
+            if (_config.GrowlNotify) {
+                GrowlManager.Register();
+            }
+
 			base.Top = 5000;
 		}
 
@@ -164,6 +168,10 @@ namespace GmailNotifierPlus.Forms {
 			if (_config.ShowTrayIcon) {
 				_TrayIcon.Icon = _iconTray;
 			}
+            if (_config.GrowlNotify) {
+                GrowlManager.Register();
+            }
+
 
 			_TrayIcon.Visible = Config.Current.ShowTrayIcon && _UnreadTotal > 0;
 

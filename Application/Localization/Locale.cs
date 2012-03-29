@@ -34,6 +34,7 @@ namespace GmailNotifierPlus.Localization {
 		public LocalePreferences Preferences { get; set; }
 		public LocaleThumbnails Thumbnails { get; set; }
 		public LocaleToast Toast { get; set; }
+        public LocaleGrowl Growl { get; set; }
 
 	}
 
@@ -160,5 +161,10 @@ namespace GmailNotifierPlus.Localization {
 		public String ViewEmail { get; set; }
 		public String NoSubject { get; set; }
 	}
+
+    public class LocaleGrowl {
+
+        public String NewMessage { get; set; }
+    }
 
 }

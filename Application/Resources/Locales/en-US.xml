@@ -90,4 +90,7 @@
 		<ViewEmail>View this email</ViewEmail>
 		<NoSubject>(no subject)</NoSubject>
 	</Toast>
+  <Growl>
+    <NewMessage>New Message</NewMessage>
+  </Growl>
 </Locale>
