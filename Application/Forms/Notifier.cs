@@ -233,8 +233,13 @@ namespace GmailNotifierPlus.Forms {
 				CheckMailFinished(this, EventArgs.Empty);
 			}
 
-			if (Unread > _previousUnread && _config.ShowToast && Account.Emails.Count > 0) {
-				ToastManager.Pop(Account);
+			if (Unread > _previousUnread && Account.Emails.Count > 0) {
+                if (_config.ShowToast) {
+                    ToastManager.Pop(Account);
+                }
+                if (_config.GrowlNotify) {
+                    GrowlManager.Notify(Account);
+                }
 			}
 		}
 

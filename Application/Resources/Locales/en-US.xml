@@ -92,5 +92,7 @@
 	</Toast>
   <Growl>
     <NewMessage>New Message</NewMessage>
+    <HasNewMessages>{0} has {1} new messages</HasNewMessages>
+    <NewMessageFrom>{0} from {1}</NewMessageFrom>
   </Growl>
 </Locale>

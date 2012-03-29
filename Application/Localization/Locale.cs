@@ -165,6 +165,8 @@ namespace GmailNotifierPlus.Localization {
     public class LocaleGrowl {
 
         public String NewMessage { get; set; }
+        public String HasNewMessages { get; set; }
+        public String NewMessageFrom { get; set; }
     }
 
 }
