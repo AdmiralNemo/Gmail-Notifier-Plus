@@ -220,11 +220,12 @@ namespace GmailNotifierPlus.Forms {
 			_CheckTray.Text = Locale.Current.Preferences.Panels.General.ShowTray;
 			_CheckToast.Text = Locale.Current.Preferences.Panels.General.ShowToast;
 			_CheckFlashTaskbar.Text = Locale.Current.Preferences.Panels.General.FlashTaskbar;
+            _CheckGrowl.Text = Locale.Current.Preferences.Panels.General.GrowlNotify;
 
 			_CheckTray.Checked = Config.Current.ShowTrayIcon;
 			_CheckToast.Checked = Config.Current.ShowToast;
 			_CheckFlashTaskbar.Checked = Config.Current.FlashTaskbar;
-
+            _CheckGrowl.Checked = Config.Current.GrowlNotify;
 		}
 
 		/// <summary>
@@ -532,6 +533,7 @@ namespace GmailNotifierPlus.Forms {
 			Config.Current.FlashTaskbar = _CheckFlashTaskbar.Checked;
 			Config.Current.ShowTrayIcon = _CheckTray.Checked;
 			Config.Current.ShowToast = _CheckToast.Checked;
+            Config.Current.GrowlNotify = _CheckGrowl.Checked;
 
 			Config.Current.Save();
 

@@ -55,6 +55,7 @@
 				<FlashTaskbar>Flash the taskbar for new email</FlashTaskbar>
 				<ShowTray>Show email count in system tray</ShowTray>
 				<ShowToast>Show Toast notifications for new email</ShowToast>
+        <GrowlNotify>Send new email notifications to Growl</GrowlNotify>
 			</General>
 			<Accounts>
 				<Title>Choose the account you would like to change</Title>

@@ -106,6 +106,7 @@ namespace GmailNotifierPlus.Localization {
 		public String FlashTaskbar { get; set; }
 		public String ShowTray { get; set; }
 		public String ShowToast { get; set; }
+        public String GrowlNotify { get; set; }
 	}
 
 	public class LocaleGeneralSound {

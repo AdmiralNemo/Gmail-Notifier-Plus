@@ -161,6 +161,9 @@ namespace GmailNotifierPlus {
 		[DataMember(Name = "showtoast")]
 		public Boolean ShowToast { get; set; }
 
+        [DataMember(Name = "growlnotify")]
+        public Boolean GrowlNotify { get; set; }
+
 		[DataMember(Name = "checkupdates")]
 		public Boolean CheckForUpdates { get; set; }
 
